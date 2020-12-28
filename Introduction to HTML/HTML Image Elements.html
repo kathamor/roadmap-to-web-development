@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Image Elements</title>
+  </head>
+
+  <body>
+    <h3>How to insert images using HTML</h3>
+       <ul>
+          <li><p><em>The HTML Image Element</em></p>
+          <p>The Image tag is a self-closing tag, so it doesn't need to be closed, but for the image element just providing an image tag isn't enough you also need to specify the source, and that's the soruce of the image that
+          will be displayed, so that can be either url so it can fetch it from the internet, or it can be a local image that's included in the same directory as your website.</p>
+          <img src="Images/html image element.png" alt="html image element">
+          <br> <img src="Images/html image element-syntax.png" alt="w3schools Html Image Element">
+          </li>
+      <!--For URL :
+You can get an image online, and you can right click on the image and simply "Copy the Image Address" to get the your image url. You can paste it and add it on your HTML website save and refresh your website.
+Note : in Atom html5 version ( <img src="" alt=""> )
+the image element automatically comes up with another attribute "alt" or the alternative text, this is a case for say a browser can't render the image then it will simply display an alternative text to the user that describe what that image was about. Now if you're interested in search engine optimazation and getting your website ranking for certain keywords this is something that google looks at to try and figure out what your web page is about.
+Note : When your image doesnt show on your website, it means that the image is no longer available or is no longer hosted at the address that's specified in the source.
+
+So in order to remove your reliance on the online source, youcan also put an image into your folder html personal site and refer to it inside your source where your index.html is located.( Your index.html and your image should be in the same folder, so you can refer to it inside your code ) SO instead of using a web address as the source of your image, you can simply refer to the file name because they are at the same level. They should be at the same hierarchical level, they shoul be both inside your site. Now if you had an images folder and ou put your image into there, then you would have to add a path to get there it would be something like this : <img src="images/angela.png alt="angela progile picture"> Images ( folder ) angela.png (image file name )
+When you hit save, and you go to your site you'll notice this image change from square which is what it got from online, to circular which is what it got from your local file.
+Tips : If you want to create your own circular image you can use a tool like crop-circle.imageonline.com, you will be able to upload an image and crop the part of the image that you're interested and get it as a circle and be able to download it to use in in your website.-->
+         <li><p><em>The src Attribute</em></p>
+             <p>The required src attribute specifies the path (URL) to the image.
+             Note: When a web page loads; it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image.</p>
+        </li>
+
+         <li><p><em>The alt Attribute</em>e</p>
+             <p>The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+             The value of the alt attribute should describe the image:</p>
+             <br><img src="Images/html image element-alt attribute-sample.PNG" alt="html alt attribute">
+         </li>
+
+        <li><p><em>Images in Another Folder</em></p>
+            <p>If you have your images in a sub-folder, you must include the folder name in the src attribute:</p>
+            <br><img src="Images/html image element-images in another folder.PNG" alt="html image in another folder">
+        </li>
+
+        <li><p><em>Images on Another Server/Website</em></p>
+            <p>Some web sites points to an external image on another server. To point to an image on another server, you must specify an absolute (full) URL in the src attribute:</p>
+            <br><img src="Images/html image element-images on another server.PNG" alt="HTML Image on another server">
+        </li>
+
+    </ul>
+
+  </body>
+
+</html>
